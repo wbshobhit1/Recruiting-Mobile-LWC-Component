@@ -17,12 +17,12 @@ The `sfdx-project.json` file contains useful configuration information for your 
 - [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
 - [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
 
-https://ibb.co/QJ0HXjT
-https://ibb.co/CbHx25d
-https://ibb.co/jT7MmrZ
-https://ibb.co/N7XXWfd
-https://ibb.co/TKf3GJY
-https://ibb.co/w6qQr09
-https://ibb.co/6sVcqN6
-https://ibb.co/QmgyYgX
-https://ibb.co/cCHnz4Z
+-https://ibb.co/QJ0HXjT
+-https://ibb.co/CbHx25d
+-https://ibb.co/jT7MmrZ
+-https://ibb.co/N7XXWfd
+-https://ibb.co/TKf3GJY
+-https://ibb.co/w6qQr09
+-https://ibb.co/6sVcqN6
+-https://ibb.co/QmgyYgX
+-https://ibb.co/cCHnz4Z
