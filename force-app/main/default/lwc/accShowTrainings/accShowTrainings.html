@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Training Data">
+
+        <div slot="actions">
+            <lightning-button label="Show" variant="brand" onclick={showTrainings} ></lightning-button>
+        </div>
+
+        <div style="padding: 20px;" class="B1">
+            <template if:true={trgfound}>
+                Training planned for this month <br/><br/>
+                <template for:each={trainingdata} for:item="trg">
+                    <ul key={trg}>
+                        <li>Training name is : {trg}</li>
+                    </ul>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>

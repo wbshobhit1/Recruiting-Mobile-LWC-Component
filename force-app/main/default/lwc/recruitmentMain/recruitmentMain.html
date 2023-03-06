@@ -1,0 +1,31 @@
+<template>
+    <div class="bodystyle">
+        <c-hr-message></c-hr-message>
+        <template if:true={phonedevice}>
+        <lightning-tabset variant="scoped">
+            <lightning-tab label="Home" class="tabstyle">
+                <c-home-tab></c-home-tab>
+            </lightning-tab>
+            <lightning-tab label="Details" class="tabstyle">
+                <c-details-home></c-details-home>
+            </lightning-tab>
+            <lightning-tab label="Mapping" class="tabstyle">
+                <c-mappings-home></c-mappings-home>
+            </lightning-tab>
+        </lightning-tabset>
+    </template>
+        <template if:true={tabordesktopdevice}>
+            <lightning-tabset variant="vertical">
+                <lightning-tab label="Home" class="tabstyle">
+                    <c-home-tab></c-home-tab>
+                </lightning-tab>
+                <lightning-tab label="Details" class="tabstyle">
+                    <c-details-home></c-details-home>
+                </lightning-tab>
+                <lightning-tab label="Mapping" class="tabstyle">
+                    <c-mappings-home></c-mappings-home>
+                </lightning-tab>
+            </lightning-tabset>
+        </template>
+    </div>
+</template>

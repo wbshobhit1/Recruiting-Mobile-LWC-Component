@@ -1,0 +1,23 @@
+<template>
+    <div style="background-color: orange; padding:20px; font-weight:bolder">
+
+        Training Name :{tname} <br/>
+        Training Type :{ttype} <br/>
+        Duration :     {tduration} <br/>
+        
+        <template if:true={devsession}>
+            <div style="background-color: lime;font: size 30px;padding: 20px;">
+                Developer Oriented Training For customization
+            </div>
+
+        </template>
+
+        
+        <template if:true={consession}>
+            <div style="background-color:yellow;font: size 30px;padding: 20px;">
+                Consultant Traning for CRM Traning for cloud
+            </div>
+
+        </template>
+    </div>
+</template>

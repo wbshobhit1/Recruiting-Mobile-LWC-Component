@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Trainings Score">
+        <div slot="actions">
+            <lightning-button label="Calculate" variant="brand" onclick={show}></lightning-button>
+        </div>
+
+        <div style="padding: 20px;font-weight:bolder;">
+            <lightning-input label="Foundation test" type="number" class="FT"></lightning-input>
+            <lightning-input label="Technology test" type="number" class="TT"></lightning-input>
+            <lightning-input label="Program test" type="number" class="PT"></lightning-input>
+            <br/>
+            <br/>
+            <strong>
+                {msg}
+            </strong>
+        </div>
+    </lightning-card>
+</template>

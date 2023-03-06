@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Position Records">
+        <div slot="actions">
+            <lightning-button-icon icon-name="utility:add" variant="brand" onclick={addposition}>
+            </lightning-button-icon>
+        </div>
+        <div style="padding:20px; height:50vh; overflow-y:scroll;overflow-x:scroll">
+            <template if:false={datafound}>
+                <lightning-spinner size="large" variant="brand"></lightning-spinner>
+            </template>
+            <lightning-datatable data={poslist} columns={tabcols} key-field="id"
+                hide-checkbox-column="true" show-row-number-column="true"
+                onrowaction={executeaction}></lightning-datatable>
+        </div>
+    </lightning-card>
+</template>

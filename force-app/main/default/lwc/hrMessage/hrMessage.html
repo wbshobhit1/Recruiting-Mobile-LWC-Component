@@ -1,0 +1,39 @@
+<template>
+    <template if:true={boxvisible}>
+    <div>
+        <div class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <div style="text-align: right;">
+                    <lightning-button-icon icon-name="utility:close"
+                    variant="bare-inverse" size="large"
+                    onclick={closebox} disabled="true" class="B2"></lightning-button-icon>
+                </div>
+                <div class="slds-modal__header">
+                    <strong>
+                        HR Application
+                    </strong>
+                </div>
+                <div class="slds-modal__content" style="background-color: darkorange;padding:20px">
+                    Welcome to mobile Recrutting App
+                    <br/>
+
+                    <lightning-input label="PIN" type="password" required="true" 
+                    min-length="3" max-length="6" pattern="[0-9]*" 
+                    placeholder="ex:123" 
+                    message-when-value-missing="Please provide Pin to login"
+                    message-when-too-short="PAssword is small" 
+                    message-when-pattern-mismatch="Password Should olny contain number"
+                    onchange={validatepin}>
+                </lightning-input>
+
+                </div>
+                <div class="slds-modal__footer">
+                    <lightning-button label="Login" class="B1" variant="brand" onclick={closebox}
+                    disabled="true"></lightning-button>
+                </div>
+            </div>
+        </div>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </div>
+    </template>
+</template>

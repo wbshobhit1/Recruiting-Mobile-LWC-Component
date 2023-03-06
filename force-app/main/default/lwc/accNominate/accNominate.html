@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Nominate to training">
+        <div slot="actions">
+            <lightning-button label="Nominate" variant="brand" onclick={show}></lightning-button>    
+        </div>
+
+        <div style="padding: 20px;">
+            <lightning-input label="Project Name"  onchange={inproject}></lightning-input>
+            <lightning-input label="No of Resources" type="number" onchange={inres}></lightning-input>
+            <br/>
+            <br/>
+            Project Name : <strong>{pname}</strong> <br/><br/>
+            Resource Nominated : <strong>{ rescount}</strong>
+        </div>
+
+        <div slot="footer">
+            <span style="font-size: 20px;color:red;font-weight:bolder">
+                {msg}
+            </span>
+        </div>
+    </lightning-card>
+</template>

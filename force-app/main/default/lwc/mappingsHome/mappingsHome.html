@@ -1,0 +1,33 @@
+<template>
+    <lightning-card title="Applications" icon-name="utility:activity">
+        <div slot="actions">
+            <lightning-button-menu icon-name="utility:threedots" menu-alignment="right" 
+            tooltip="actions" onselect={callactions}>
+                <lightning-menu-item label="New" value="1"></lightning-menu-item>
+                <lightning-menu-item label="Search Stage" value="2"></lightning-menu-item>
+                <lightning-menu-item label="Display Status" value="3"></lightning-menu-item>
+                <lightning-menu-divider></lightning-menu-divider>
+                <lightning-menu-item label="Reload" value="4"></lightning-menu-item>
+            </lightning-button-menu>
+        </div>
+
+        <div style="padding:20px;height:70vh;overflow-y:scroll;overflow-x:scroll;background-color:yellow">
+            <template if:true={apprecords}>
+                <c-application-records></c-application-records>
+        </template>
+
+        <template if:true={appnew}>
+            <c-application-new-records oncancelform={reload}></c-application-new-records>
+    </template>
+
+        <template if:true={appsearch}>
+            <c-stage-display></c-stage-display>
+        </template>
+
+        <template if:true={appstatus}>
+            <c-container-box></c-container-box>
+        </template>
+
+        </div>
+    </lightning-card>
+</template>

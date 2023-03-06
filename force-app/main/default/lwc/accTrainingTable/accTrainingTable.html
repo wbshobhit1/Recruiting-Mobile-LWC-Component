@@ -1,0 +1,27 @@
+<template>
+    <div style="background-color: cadetblue; padding: 20px;">
+
+        <table width="100%" border="5" cellspacing="5" cellpadding="5">
+
+            <thead>
+                <tr>
+                    <th>Training name</th>
+                    <th>Training type</th>
+                    <th>Training Topics</th>
+                </tr>
+            </thead>
+            <tbody>
+                <template for:each={acctrainings} for:item="acc">
+                    <tr key={acc.tname}>
+                        <td>{acc.tname}</td>
+                        <td>{acc.ttype}</td>
+                        <td>{acc.ttopic}</td>
+                    </tr>
+
+                </template>
+            </tbody>
+
+        </table>
+    </div>
+    
+</template>

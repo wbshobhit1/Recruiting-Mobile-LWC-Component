@@ -1,0 +1,17 @@
+<template>
+
+    <div style="background-color: yellowgreen; padding: 20px; font-weight:bolder">
+
+        SalesForce developer Trainings:
+        <br/><br/>
+
+        <template for:each={devlist} for:item="dt">
+
+            <ul key={dt}>
+                <li> {dt} </li>
+            </ul>
+        </template>
+
+    </div>
+    
+</template>

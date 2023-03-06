@@ -1,0 +1,29 @@
+<template>
+
+    <lightning-card title="Display">
+
+        <div slot="actions">
+            <span style="padding: 10px; border:5px solid red"
+                onmouseover={applyred} onmouseout={reset}>
+                RED
+            </span>
+            &nbsp;&nbsp;
+            <span style="padding: 10px; border:5px solid green"
+            onmouseover={applygreen} onmouseout={reset}>
+                GREEN
+            </span>
+            &nbsp;&nbsp;
+            <span style="padding: 10px; border:5px solid blue"
+            onmouseover={applyblue} onmouseout={reset}>
+                BLUE
+            </span>
+            
+        </div>
+            <div style="padding: 20px; height:30vh;" class="D1">
+                !! Hello Training !!
+            </div>
+        
+
+    </lightning-card>
+    
+</template>

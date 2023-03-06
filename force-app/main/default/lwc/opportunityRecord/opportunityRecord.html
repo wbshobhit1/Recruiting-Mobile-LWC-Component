@@ -1,0 +1,15 @@
+<template>
+
+    <lightning-card title="Opportunity Records">
+
+        <div slot="actions">
+            <lightning-button label="Display" variant="brand" onclick={show}></lightning-button>
+        </div>
+
+        <div style="padding: 20px;">
+            <lightning-datatable data={opplist} columns={tabcols} key-field="id"
+            hide-checkbox-column="true" show-row-number-column="true"></lightning-datatable>
+        </div>
+    </lightning-card>
+    
+</template>

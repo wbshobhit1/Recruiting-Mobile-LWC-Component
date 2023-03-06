@@ -1,0 +1,20 @@
+.bodystyle
+{
+    height: 80vh; 
+    background-color:orange; 
+    padding:20px;
+}
+
+.welcomestyle
+{
+    border: 10px ridge red;border: raduis 30px;
+    font-size:30px; 
+    padding:20px; 
+    box-shadow:3px 3px gray;
+    font-family:'Courier New',Courier, monospace;
+    font-weight: bolder;
+    color: blue;
+    background-color: aqua;
+    text-shadow: 2px 2px red;
+
+}

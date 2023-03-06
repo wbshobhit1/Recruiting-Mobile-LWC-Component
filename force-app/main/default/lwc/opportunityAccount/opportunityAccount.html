@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Parent account Info">
+        <div style="padding: 20px;background-color:yellow; font-weight:bolder;">
+            Parent Account Information <br/><br/>
+            <template if:true={datafound}>
+                Account.Name : {oppdata.Account.Name} <br/>
+                Account.Industry : {oppdata.Account.Industry} <br/>
+                Account.Revenue : {oppdata.Account.AnnualRevenue} 
+            </template>
+        </div>
+    </lightning-card>
+</template>

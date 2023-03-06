@@ -1,0 +1,8 @@
+<template>
+    <div style="background-color: lime;padding:20px;">
+        <c-stage-search onstagesearch={handledata}></c-stage-search>
+        <br/>
+        <lightning-datatable data={applist} columns={tabcols} key-field="id"
+        hide-checkbox-column="true" show-row-number-column="true"></lightning-datatable>
+    </div>
+</template>

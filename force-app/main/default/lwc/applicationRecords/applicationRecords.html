@@ -1,0 +1,12 @@
+<template>
+    <!-- <div slot="actions">
+        <lightning-button-icon icon-name="utility:add" variant="brand" onclick={addapplication}>
+        </lightning-button-icon>
+    </div> -->
+    <template if:false={datafound}>
+
+        <lightning-spinner size="large" variant="brand"></lightning-spinner>
+    </template>
+    <lightning-datatable data={applist} columns={tabcols} key-field="id"
+    hide-checkbox-column="true" show-row-number-column="true" onrowaction={executeaction}></lightning-datatable>
+</template>

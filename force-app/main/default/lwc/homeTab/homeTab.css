@@ -1,0 +1,16 @@
+.dstyle1
+{
+    padding: 30px;
+    display: block;
+    text-align: center;
+
+}
+
+.dstyle2
+{
+    padding: 30px;
+    display: block;
+    text-align: center;
+    border: 20px dashed red;
+    border-radius: 50px ;
+}

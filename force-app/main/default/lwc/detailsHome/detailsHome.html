@@ -1,0 +1,18 @@
+<template>
+
+    <div style="border: 10px solid red;padding:20px; text-align:center;">
+        <lightning-button-group>
+            <lightning-button label="Positions" onclick={showpositions} variant={pbutton}></lightning-button>
+            <lightning-button label="Candidates" onclick={showcandidates} variant={cbutton}></lightning-button>
+        </lightning-button-group>
+    </div>
+    <br/>
+        <template if:true={postable}>
+            <c-position-records></c-position-records>
+        </template>
+        
+        <template if:true={candtable}>
+            <c-candidate-records></c-candidate-records>
+        </template>
+        
+</template>

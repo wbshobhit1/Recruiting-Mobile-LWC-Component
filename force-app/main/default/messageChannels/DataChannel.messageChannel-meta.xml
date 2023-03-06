@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lightningMessageChannel>
+    <masterLabel>DataChannel</masterLabel>
+    <isExposed>true</isExposed>
+    <lightningMessageFields>
+        <fieldName>msg</fieldName>
+    </lightningMessageFields>
+</lightningMessageChannel>

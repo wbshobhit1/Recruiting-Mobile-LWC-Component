@@ -1,0 +1,12 @@
+<template>
+    
+    <lightning-card title="Contact Records">
+        
+        <div style="padding: 20px;">
+            <lightning-input label="First Name" onchange={inpfname}></lightning-input>
+            <br/>
+            <lightning-datatable data={conlist} columns={tabcols} key-field="id"
+            hide-checkbox-column="true" show-row-number-column="true"></lightning-datatable>
+        </div>
+    </lightning-card>
+</template>

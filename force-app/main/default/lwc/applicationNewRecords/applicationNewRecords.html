@@ -1,0 +1,11 @@
+<template>
+    
+    <div style="background-color: aqua;padding:20px;">
+        <lightning-record-form object-api-name="Job_Application__c" layout-type="Full"
+        onsuccess={showSuccess} oncancel={cancelform}>
+
+        </lightning-record-form>
+        <br/>
+        <strong>{msg}</strong>
+    </div>
+</template>
